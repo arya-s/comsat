@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		.noselect {
+			user-select: none;
+		}
+
+		#audio-notification {
+			margin-top: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div id="username-wrapper">
+		<input id="username" type="text" placeholder="username" autocomplete="off"/>
+	</div>
+	<div id="audio-notification">
+		<input id="audio_notification" type="checkbox" autocomplete="off"/>
+		<label for="audio_notification" class="noselect">Audio notification</label>
+	</div>
+
+	<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
