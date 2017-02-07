@@ -57,6 +57,11 @@ function initComsat () {
 		var latest = mutations[mutations.length - 1];
 		var nodes = latest.addedNodes[0].childNodes;
 
+		// Only react to user messages, discard notifications etc.
+		if (nodes.length < 3) {
+			return;
+		}
+
 		var timestamp = nodes.item(TIMESTAMP);
 		var user = nodes.item(USER);
 		var message = nodes.item(MESSAGE).textContent;
