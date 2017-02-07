@@ -3,7 +3,7 @@
 is a Chrome extension that highlights users on http://shieldbattery.net on mentions.
 
 ## Install
-1. Download `comsat.crx` from this repo or https://drive.google.com/open?id=0Bzr7EVRN_St0bm51TlFSVE1uWWc
+1. Download `comsat.crx` from this repo or https://drive.google.com/open?id=0Bzr7EVRN_St0VnRURUZ1VHRDaDA
 2. Type `chrome://extensions` into the Chrome addressbar
 3. Drag `comsat.crx` over the extension list click `Add extension`
 4. Click the comsat icon and add the phrase you want to be highlighted on and whether or not a highlighting sound should play
