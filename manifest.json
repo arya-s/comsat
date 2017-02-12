@@ -1,30 +1,38 @@
 {
   "manifest_version": 2,
-  "background": {
-      "page": "background.html"
+  "name": "Comsat Notification Center",
+  "version": "1.0.4",
+  "description": "Notify users on shieldbattery.net when they are mentioned.",
+  "applications": {
+    "gecko": {
+      "id": "me@andrei.jp"
+    }
   },
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js"],
-    "matches": [ "https://shieldbattery.net/chat/ShieldBattery" ],  
+    "matches": ["https://shieldbattery.net/chat/ShieldBattery"],  
     "run_at":  "document_end"
   }],
-  "icons": {
-  	"32": "icon48.png",
-  	"48": "icon48.png",
-  	"128": "icon48.png"
+   "background": {
+    "scripts": ["background.js"]
   },
   "browser_action": {
+    "browser_style": true,
+    "default_title": "Comsat Sation",
+    "default_popup": "popup.html",
 	  "default_icon": {
 	    "32": "icon48.png",
 	    "48": "icon48.png",
 	    "128": "icon48.png"
-	  },
-      "default_title": "Comsat Sation",
-      "default_popup": "popup.html"
+	  }
   },
-  "converted_from_user_script": true,
-  "name": "Comsat Notification Center",
-  "version": "0.0.4",
-  "description": "Notify users on shieldbattery.net"
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "32": "icon48.png",
+    "48": "icon48.png",
+    "128": "icon48.png"
+  }
 }

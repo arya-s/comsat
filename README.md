@@ -1,11 +1,10 @@
 #Comsat Station
 
-is a Chrome extension that highlights users on http://shieldbattery.net on mentions.
+is a WebExtension (currently built for Firefox) that highlights users on http://shieldbattery.net on mentions.
 
 ## Install
-1. Download `comsat.crx` from this repo or https://drive.google.com/open?id=0Bzr7EVRN_St0VnRURUZ1VHRDaDA
-2. Type `chrome://extensions` into the Chrome addressbar
-3. Drag `comsat.crx` over the extension list click `Add extension`
+1. Download `comsat.xpi` from this repo or https://drive.google.com/open?id=0Bzr7EVRN_St0S0p1dWVsQkRFU28
+2. Drag the extension over your browser and install it
 4. Click the comsat icon and add the phrase you want to be highlighted on and whether or not a highlighting sound should play
 5. Refresh http://shieldbattery.net
 
